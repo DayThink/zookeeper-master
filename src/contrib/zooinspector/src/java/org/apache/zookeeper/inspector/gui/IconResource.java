@@ -57,7 +57,9 @@ public class IconResource {
     // compare http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
     private static final String[] DEFAULT_XDG_DATA_DIRS = new String[]{
         "/usr/local/share",
-        "/usr/share"
+        "/usr/share",
+        //需要加上图标资源文件的路径,否则程序找不到;
+        "D:\\zookeeper-master\\out\\production\\zooinspector\\resources"
     };
 
     private String theme = DEFAULT_THEME;
