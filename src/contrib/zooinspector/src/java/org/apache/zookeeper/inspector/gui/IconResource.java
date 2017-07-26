@@ -19,6 +19,7 @@
 package org.apache.zookeeper.inspector.gui;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -59,7 +60,7 @@ public class IconResource {
         "/usr/local/share",
         "/usr/share",
         //需要加上图标资源文件的路径,否则程序找不到;
-        "D:\\zookeeper-master\\out\\production\\zooinspector\\resources"
+        "./src/main/resources"
     };
 
     private String theme = DEFAULT_THEME;
